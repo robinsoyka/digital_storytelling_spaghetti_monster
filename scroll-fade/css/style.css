@@ -3,38 +3,49 @@ body{
   padding:0;
   background:#F5F5F5;
 }
-h1{
-  font-size: 48px;
+h1,h2{
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  color: #333;
   margin:0;
 }
+
+h1{
+ 	font-size: 40px;	
+	}
+	
+h2{
+	font-size: 28px;		
+	}
+
 p{
   font-size: 14px;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  color: #333;
   line-height: 1.5em;
+  letter-spacing: 1px;
 }
-strong{
-  font-size: 25px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  color: #FFF;
-}
+
 .clear{
   clear: both;
 }
 .contentbox{
   margin: 0 auto;
-  /*width: 800px;*/
-  height: 800px;
+  height: 650px;
 }
 img{
   float: left;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
 }
+
+a {
+  text-decoration: none;
+}
+
+/*------------------------ ABSTÄNDE AUF SPEZIELLEN SEITEN -------------------------*/
+#gebote, #kopfbedeckung, #prophet, #geschichte, #feiertage, #anmeldung{
+	padding:10%;
+	}
+
 
 /*------------------------ INTRO SCROLL FADE -------------------------*/
 
@@ -132,99 +143,151 @@ div#trenner {
   height: 800px;
 }
 
-/*------------------------ BEGINN -------------------------*/
+/*------------------------ SCHÖPFUNGSGESCHICHTE -------------------------*/
 
-#beginn{
-  background-color:#fba2e6;
-  width:auto;
-}
+#geschichte{
+	background-color:#fba2e6;
+	color:#fe47c5;	
+	}
 
-#beginn h1{
-  color:#fe47c5;
-  }
+#geschichte article{
+	float: left;
+    width: 50%;
+	}	
+
+#geschichte img{
+    width: 45%;
+	}	
+	
+
+/*------------------------ PROPHET & EVANGELIUM -------------------------*/
+
+#prophet{
+	background-color:#8b69d3;
+	color:#ffdeb4;	
+	}
+	
+#prophet article{
+	float: left;
+    margin-right: 6%;
+    width: 50%;
+	}	
+
+#prophet img{
+ 	float: left;
+    width: 40%;
+	}	
+
 
 /*------------------------ GEBOTE -------------------------*/
 
 #gebote{
-  background-color:#FC0;
-  width:auto;
-  padding:2% 10%;
+  background-color:#febfc7;
+  color:#503900;	
   }
-  
+
+#gebote h1{
+	margin-top:4%;
+	}
+
 .gebote_zahlen_box{
-  width:20%;
-  position:relative;
-  float:left;
+    position: relative;
+    width: 30%;
+	float:left;
 }
 #gebote .circle {
-    position: relative;
-    width: 50px;
-    height: 50px;
+  	background: #503900 none repeat scroll 0 0;
+    border-radius: 45px;
     float: left;
+    height: 80px;
     margin: 5% 10% 0 0;
-    background:#333;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 35px;
-  text-align: center;
-  border:3px solid #fff;
+    position: relative;
+    text-align: center;
+    width: 80px;
 }
 
 .gebote_zahlen{
-  left: 38%;
+	color:#FEBFC7;
+    font-size: 2.4em;
+    left: 38%;
     position: absolute;
-    top: 15%;
+    top: 17%;
+	font-family: 'Roboto Slab', serif;
+  	font-weight: 400;
 }
 
+
 #gebote article{
-  position: relative;
-  width:75%;
-  float:left;
-  margin-top:10px;
+    color: #005479;
+    float: left;
+    position: relative;
+    width: 60%;
 }
 
 #gebote .gebote_text{
   position:absolute;
   display:none;
-  padding:0 30px;
 }
 
 #gebote article #gebot1{
   display:block;  
   }
 
+
+/*------------------------ KOPFBEDECKUNG -------------------------*/
+
+#kopfbedeckung{
+	background-color:#ff8d6b;
+	color:#e54b27;
+}
+
+#kopfbedeckung article{
+	float: left;
+    margin-right: 6%;
+    width: 50%;
+	}	
+
+#kopfbedeckung img{
+ 	float: left;
+    width: 40%;
+	}
+	
+	
 /*------------------------ ACCORDION FEIERTAGE -------------------------*/
 
 #feiertage {
-  background-color: #F8A434;
-  width: auto;
-  height: 800px;
-  text-align: center;
-  color: #fffafa;
-  margin-bottom: 50px;
-
+  background-color: #2fc7b2;
+  color: #005479;
 }
 
 .accordion {
-  margin: auto;
-
+  width:50%;
+  float:left;
+  margin:0 2% 0 0;
 }
 
+.accordion dt{
+	background-color:#00aedb;
+	color:#b7eda1;
+	}
+
 .accordion dt, .accordion dd {
-  padding: 30px;
-  border-top: 3px solid white;
+  padding: 20px;
+  border-top: 3px solid #2fc7b2;
   border-bottom: 0;  
-  background-color: #E86C8D;
 }
 
 .accordion dd {
+  border-top: 0;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;  
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: center;
+  color: #005479;
   margin-left: 0;
-  background-color: #7b68ee;
-}
-
-.accordion dt:last-of-type, .accordion dd:last-of-type {
-  
-
+  background-color: #aceadf;
+  letter-spacing: auto;
 }
 
 .accordion dt a, .accordion dd a {
@@ -238,70 +301,54 @@ div#trenner {
   color: #fffafa;
 }
 
-.accordion dd {
-  border-top: 0;
-   font-size: 14px;
-  font-family: 'Roboto Slab', serif;  
-  font-weight: 400;
-  line-height: 1.5em;
-  text-align: center;
-  color: #fffafa;
-
-}
-
 .accordion dd:last-of-type {
-  
   position: relative;
   top: -1px;
 }
 
-a {
-  text-decoration: none;
-}
+#feiertage img{
+	width:45%;
+	}
+
+
 
 /*------------------------ ANMELDUNG -------------------------*/
 
 #anmeldung {
   background-color: #F8A434;
-  width: auto;
-  height: 800px;
   text-align: center;
+  color: #FDFCFB;
+  position:relative;
   color: #FDFCFB;
 }
 
 
 form {
   width: 60%;
-  margin:  auto;
+  margin: auto;
 }
-
-#anmeldung h1 {
-  padding-top:180px;
-  color: #FDFCFB;
-  background:url("assets/stoerer.png") no-repeat right 10% bottom 10px;
-  background-size: 180px 180px;
-}
-
 
 #anmeldung p {
-  letter-spacing: 1px;
-  margin: -2px 50px 60px;
-  color: #FDFCFB;
+  margin:0 0 5% 20%;
+  width: 60%;
  }
-
 
 .input {
   display: flex;
   align-items: center;
 }
 
+input:focus {
+  outline: none;
+  outline: 2px solid #E86C8D;
+  box-shadow: 0 0 2px #E86C8D;
+}
 
 .button {
   height: 44px;
   border: none;
 }
 
-  
 #email {
   width: 70%;
   background: #FDFCFB;
@@ -311,7 +358,6 @@ form {
   text-indent: 5%;
   border-radius: 5px 0 0 5px;
 }
-
 
 #submit {
   width: 35%;
@@ -326,16 +372,16 @@ form {
   cursor: pointer;
   transition: background .3s ease-in-out;
 }
-  
 
 #submit:hover {
   background: #d45d7d;
-}
-  
+}  
 
-input:focus {
-  outline: none;
-  outline: 2px solid #E86C8D;
-  box-shadow: 0 0 2px #E86C8D;
-}
-
+.stoerer{
+	background:url("../assets/stoerer.png") no-repeat;
+	height:150px;
+	width:150px;
+	position:absolute;
+	top:10%;
+	right:16%;
+	}
