@@ -53,6 +53,7 @@ a {
   position: relative;
   height: 1700px;
   background:#0070BA;
+  color:#fff;
 }
 
 #items {
@@ -139,15 +140,99 @@ div#trenner {
   width:100%;
 }
 
+/*------------------------ HIMMEL -------------------------*/
+
+#himmelende{
+  position: absolute;
+  top: 0;
+  background-image: url("../assets/paradies_wolken.png");
+  height:617px;
+  width:100%;
+  z-index: 2;
+}
+
 #himmel{
-  height: 800px;
+  height: 1500px;
+  position: relative;
+  background:#70b8b4;
+  padding-top: 40%; /*----- GROBE POSITIONIERUNG ------*/
+}
+
+#protagonist{
+  position: absolute;
+  /*top: 480px;*/
+  top: 0;
+  /*left:140px;*/
+  left: 0;
+  background-image: url("../assets/engel.png");
+  /*width: 500px;*/
+  width: 100%;
+  /*height: 500px;*/
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+  background-size: 500px 500px;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+#biervulkan{
+  background-image: url("../assets/biervulkan.png");
+  width: 500px;
+  height: 500px;
+}
+
+#fabrik{
+  background-image: url("../assets/fabrik.png");
+  width: 1000px;
+  height: 372px;
+}
+
+#biervulkan_container {
+position: absolute;
+  top: 680px;
+  left:500px;
+  width: 100%;
+  overflow: visible;
+}
+#fabrik_container {
+position: absolute;
+  top: 1650px;
+  left:20px;
+  width: 100%;
+  overflow: visible;
+}
+
+
+
+
+#himmelanfang2{
+  position: absolute;
+  bottom: 0;
+  background-image: url("../assets/paradies_wolken_02.png");
+  height:637px;
+  width:100%;
+  z-index: 3;
 }
 
 /*------------------------ SCHÖPFUNGSGESCHICHTE -------------------------*/
 
+#himmelende2{
+  position: absolute;
+  top: 0;
+  background-image: url("../assets/paradies_wolken_03.png");
+  height:532px;
+  width:100%;
+}
+
 #geschichte{
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 400px;
+  height: 1000px;
 	background-color:#fba2e6;
 	color:#fe47c5;	
+  position: relative;
 	}
 
 #geschichte article{

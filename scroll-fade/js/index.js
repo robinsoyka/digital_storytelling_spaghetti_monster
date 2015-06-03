@@ -81,3 +81,19 @@ var id = '#' + $(this).attr('data-id');
   $(id).fadeIn();
   
 });
+////////////////////////// PARALLAX HIMMEL ////////////////////////// 
+
+$(function () { // wait for document ready
+  var controller = new ScrollMagic.Controller({vertical: true});
+  // build tween
+  var tween = new TimelineMax()
+    .add([
+      TweenMax.to("#biervulkan_container", 1, {top: $('#biervulkan_container').position().top-500+'px', ease: Linear.easeNone}),
+      TweenMax.to("#fabrik_container", 1, {top: $('#fabrik_container').position().top-600+'px', ease: Linear.easeNone})
+    ]);
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#himmel", duration: $('#himmel').height(), offset: 0})
+          .setTween(tween)
+          .addTo(controller);
+});
