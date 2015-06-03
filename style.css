@@ -35,6 +35,15 @@ img{
 	padding-right: 20px;
 }
 
+/* Wie alles begann...*/
+#beginn{
+	background-color:#fba2e6;
+	width:auto;
+}
+
+#beginn h1{
+	color:#fe47c5;
+	}
 
 /* Gebote */
 #gebote{
